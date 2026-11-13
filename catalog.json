@@ -4,7 +4,122 @@
   "delivery": {
     "mode": "github-release-assets",
     "releaseTag": "current",
-    "status": "not_initialized"
+    "status": "ready"
   },
-  "assets": {}
+  "assets": {
+    "bonus-depreciation/ECC9BF/16x9": {
+      "product": "bonus-depreciation",
+      "creativeId": "ECC9BF",
+      "format": "16x9",
+      "filename": "bonus-depreciation--ECC9BF--16x9.png",
+      "mediaType": "image",
+      "mimeType": "image/png",
+      "bytes": 1914896,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "70ccfdf69bfb7a51728cab9e4feb03186575522b2b0762f16d508e67961fe0f9",
+      "deliveryUrl": "https://github.com/DCAP-Markerting-Funnels/ad-media-bridge/releases/download/current/bonus-depreciation--ECC9BF--16x9.png",
+      "approval": {
+        "status": "approved",
+        "current": true,
+        "reference": "User approval recorded in Platforms chat 2026-11-13: ECC9BF FINAL pack bridge test",
+        "approvedAt": "2026-11-13T15:36:34Z"
+      }
+    },
+    "bonus-depreciation/ECC9BF/191x1": {
+      "product": "bonus-depreciation",
+      "creativeId": "ECC9BF",
+      "format": "191x1",
+      "filename": "bonus-depreciation--ECC9BF--191x1.png",
+      "mediaType": "image",
+      "mimeType": "image/png",
+      "bytes": 852463,
+      "width": 1200,
+      "height": 628,
+      "sha256": "1380562fb91ecea5fbfbe32b84ff4d6a404ccb617515f0607dbe5004f2cd4186",
+      "deliveryUrl": "https://github.com/DCAP-Markerting-Funnels/ad-media-bridge/releases/download/current/bonus-depreciation--ECC9BF--191x1.png",
+      "approval": {
+        "status": "approved",
+        "current": true,
+        "reference": "User approval recorded in Platforms chat 2026-11-13: ECC9BF FINAL pack bridge test",
+        "approvedAt": "2026-11-13T15:36:34Z"
+      }
+    },
+    "bonus-depreciation/ECC9BF/1x1": {
+      "product": "bonus-depreciation",
+      "creativeId": "ECC9BF",
+      "format": "1x1",
+      "filename": "bonus-depreciation--ECC9BF--1x1.png",
+      "mediaType": "image",
+      "mimeType": "image/png",
+      "bytes": 1077764,
+      "width": 1080,
+      "height": 1080,
+      "sha256": "f5d3096d1c5a1ba58c2de6f431e73a066130e00b8378a6c310d347149388e26c",
+      "deliveryUrl": "https://github.com/DCAP-Markerting-Funnels/ad-media-bridge/releases/download/current/bonus-depreciation--ECC9BF--1x1.png",
+      "approval": {
+        "status": "approved",
+        "current": true,
+        "reference": "User approval recorded in Platforms chat 2026-11-13: ECC9BF FINAL pack bridge test",
+        "approvedAt": "2026-11-13T15:36:34Z"
+      }
+    },
+    "bonus-depreciation/ECC9BF/3x4": {
+      "product": "bonus-depreciation",
+      "creativeId": "ECC9BF",
+      "format": "3x4",
+      "filename": "bonus-depreciation--ECC9BF--3x4.png",
+      "mediaType": "image",
+      "mimeType": "image/png",
+      "bytes": 969780,
+      "width": 1080,
+      "height": 1440,
+      "sha256": "6009e3b72ce57fd4ea72a7db9172f0235f2e8bfb2cd8da304d480b4f43a8f2df",
+      "deliveryUrl": "https://github.com/DCAP-Markerting-Funnels/ad-media-bridge/releases/download/current/bonus-depreciation--ECC9BF--3x4.png",
+      "approval": {
+        "status": "approved",
+        "current": true,
+        "reference": "User approval recorded in Platforms chat 2026-11-13: ECC9BF FINAL pack bridge test",
+        "approvedAt": "2026-11-13T15:36:34Z"
+      }
+    },
+    "bonus-depreciation/ECC9BF/4x5": {
+      "product": "bonus-depreciation",
+      "creativeId": "ECC9BF",
+      "format": "4x5",
+      "filename": "bonus-depreciation--ECC9BF--4x5.png",
+      "mediaType": "image",
+      "mimeType": "image/png",
+      "bytes": 1206504,
+      "width": 1080,
+      "height": 1350,
+      "sha256": "c60bd1c56df853f31212a5febde41fff284318ec7c8e0fb263778c3a1574a89a",
+      "deliveryUrl": "https://github.com/DCAP-Markerting-Funnels/ad-media-bridge/releases/download/current/bonus-depreciation--ECC9BF--4x5.png",
+      "approval": {
+        "status": "approved",
+        "current": true,
+        "reference": "User approval recorded in Platforms chat 2026-11-13: ECC9BF FINAL pack bridge test",
+        "approvedAt": "2026-11-13T15:36:34Z"
+      }
+    },
+    "bonus-depreciation/ECC9BF/9x16": {
+      "product": "bonus-depreciation",
+      "creativeId": "ECC9BF",
+      "format": "9x16",
+      "filename": "bonus-depreciation--ECC9BF--9x16.png",
+      "mediaType": "image",
+      "mimeType": "image/png",
+      "bytes": 1394440,
+      "width": 1080,
+      "height": 1920,
+      "sha256": "cff94e0d8061e15fa81a6477afe95afaab8c836747797072657b27a9372a09e3",
+      "deliveryUrl": "https://github.com/DCAP-Markerting-Funnels/ad-media-bridge/releases/download/current/bonus-depreciation--ECC9BF--9x16.png",
+      "approval": {
+        "status": "approved",
+        "current": true,
+        "reference": "User approval recorded in Platforms chat 2026-11-13: ECC9BF FINAL pack bridge test",
+        "approvedAt": "2026-11-13T15:36:34Z"
+      }
+    }
+  }
 }

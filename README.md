@@ -12,7 +12,7 @@ Do **not** commit artwork into Git: Git retains old versions after replacement o
 
 Use one mutable GitHub release tagged `current` for delivery assets. Replace or remove its files when approval changes. Do not create archival media releases, version folders or backup copies in this bridge. Text configuration and catalog history may remain in Git; artwork must not.
 
-The release is not initialized and the catalog is empty. This setup did not publish any artwork.
+The `current` release contains the six approved ECC9BF PNG formats from FINAL. `catalog.json` records their verified source checksums and stable release URLs.
 
 Removing an asset here does not erase copies already downloaded, cached or uploaded to ad platforms. Those platform copies require their own withdrawal action; the bridge cannot guarantee deletion outside its control.
 
@@ -33,7 +33,7 @@ Example naming only: `bonus-depreciation/ECC9BF/1x1` and `bonus-depreciation--EC
 6. Verify the saved asset and a paused preview. A stored image reference alone does not prove rendering.
 7. Activate ads only with explicit human authorization.
 
-Release-asset upload and removal capabilities still need to be connected and tested. This repository alone does not automate publication.
+Release upload/removal works through the authenticated GitHub CLI API. Meta rejected the ordinary GitHub release URL; importing the public `release-assets.githubusercontent.com` delivery URL resolved from that release succeeded. Resolve a fresh delivery URL immediately before each platform upload; it expires and must not be stored as the permanent catalog URL. This repository alone does not automate publication.
 
 ## Corrections and withdrawal
 
@@ -44,11 +44,11 @@ Do not silently alter approved images, copy or disclaimers. Check disclosure in 
 ## Current state
 
 - Repository and operating files initialized.
-- Zero artwork entries in `catalog.json`.
-- No media release initialized or artwork published by this setup.
+- Six verified ECC9BF image entries in `catalog.json`.
+- One mutable `current` release; no artwork committed into Git.
 - No ad-platform credentials stored here.
 - No dependency on the landing-page deployment.
-- Next prototype: connect release-asset upload, publish one approved image, then verify GitHub → platform upload → paused preview.
+- GitHub → Meta image upload verified for all six ECC9BF formats; ad placement preview verification is the next step.
 
 ## Files
 
