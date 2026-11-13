@@ -12,3 +12,6 @@ This is a current-approved-media delivery bridge, not a creative workspace, arch
 - Use supported authenticated plugins/APIs. Do not bypass denials or put tokens in delivery URLs.
 - Keep test ads paused. Repository access, artwork approval and upload are not permission to activate ads or spend.
 - Report exact files, checksums, URLs, platform results and observed previews. Separate implemented behavior from planned automation.
+
+- Keep one ad per approved content ID, with ratio variants inside it. Preserve all approved copy; explicitly record whether variants rotate or are assigned by placement.
+- Use the tested Meta PLACEMENT recipe in README.md when exact ratios are required. Verify actual placement previews and existing form/destination before calling the build complete.

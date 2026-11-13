@@ -48,7 +48,8 @@ Do not silently alter approved images, copy or disclaimers. Check disclosure in 
 - One mutable `current` release; no artwork committed into Git.
 - No ad-platform credentials stored here.
 - No dependency on the landing-page deployment.
-- GitHub → Meta image upload verified for all six ECC9BF formats; ad placement preview verification is the next step.
+- GitHub → Meta image upload verified for all six ECC9BF formats.
+- One paused ECC9BF ad created through the Meta plugin; Feed, Stories, Reels and square fallback reviewed in-app. Meta uses the 4:5, 9:16 and 1:1 formats; other exports remain available for appropriate platform use.
 
 ## Files
 
@@ -56,3 +57,17 @@ Do not silently alter approved images, copy or disclaimers. Check disclosure in 
 - `catalog.schema.json`: catalog format.
 - `AGENTS.md`: operator instructions.
 - `.gitignore`: ordinary staging allowlist. This is not a security boundary and cannot prevent forced commits.
+
+## Tested Meta build contract
+
+Keep one ad per content ID, with its format variations inside the ad. Use the content ID in the ad name, for example S01-01-I01 - ECC9BF. Do not create separate ads for aspect ratios.
+
+The tested placement-controlled recipe uses asset_feed_spec.optimization_type = PLACEMENT, media labels, uniquely labeled copy sets and one body/title/description per placement rule. Page and Instagram identity stay in object_story_spec. The existing instant form is retained through asset_feed_spec.call_to_actions[].value.lead_gen_form_id. No new form is required.
+
+Five approved copy variations can coexist in that one ad when assigned to placement groups. This is not random text rotation across every placement. Do not silently drop copy variants or claim random optimization.
+
+Verify actual saved placement previews: image arrays alone do not prove selection. Omitting the placement mode classified the tested asset feed as Dynamic Creative and caused placement restrictions; DOF mode did not apply the requested image mapping. Explicit PLACEMENT mode rendered the tested Feed, Stories and Reels with the intended ratios.
+
+For the tested Meta static pack, use 4:5 for Feed, 9:16 for Stories/Reels and 1:1 as the fallback. Keep the other approved export ratios in the bridge for platforms where appropriate; do not force every export into Meta placements.
+
+Keep all review builds paused. Detailed platform IDs, request payloads, diagnostics and screenshots belong in private project records, not this public repository.
