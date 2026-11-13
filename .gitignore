@@ -1,0 +1,8 @@
+# Artwork is delivered through replaceable release assets, never Git commits.
+# Ordinary staging is limited to bridge text configuration.
+*
+!README.md
+!AGENTS.md
+!.gitignore
+!catalog.json
+!catalog.schema.json

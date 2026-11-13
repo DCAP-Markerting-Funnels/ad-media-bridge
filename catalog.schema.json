@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Current Approved Ad Media Catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "delivery",
+    "assets"
+  ],
+  "properties": {
+    "$schema": {
+      "const": "./catalog.schema.json"
+    },
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "delivery": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "releaseTag",
+        "status"
+      ],
+      "properties": {
+        "mode": {
+          "const": "github-release-assets"
+        },
+        "releaseTag": {
+          "const": "current"
+        },
+        "status": {
+          "enum": [
+            "not_initialized",
+            "ready"
+          ]
+        }
+      }
+    },
+    "assets": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z0-9-]+/[A-Za-z0-9_-]+/[A-Za-z0-9_-]+$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "product",
+          "creativeId",
+          "format",
+          "filename",
+          "mediaType",
+          "mimeType",
+          "bytes",
+          "width",
+          "height",
+          "sha256",
+          "deliveryUrl",
+          "approval"
+        ],
+        "properties": {
+          "product": {
+            "type": "string",
+            "minLength": 1
+          },
+          "creativeId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "format": {
+            "type": "string",
+            "minLength": 1
+          },
+          "filename": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]+\\.(png|jpg|jpeg|webp|gif|mp4|mov|webm)$"
+          },
+          "mediaType": {
+            "enum": [
+              "image",
+              "video"
+            ]
+          },
+          "mimeType": {
+            "type": "string",
+            "pattern": "^(image|video)/[a-zA-Z0-9.+-]+$"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "width": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "height": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "deliveryUrl": {
+            "type": "string",
+            "pattern": "^https://github\\.com/DCAP-Markerting-Funnels/ad-media-bridge/releases/download/current/[^/?#]+$"
+          },
+          "approval": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "status",
+              "current",
+              "reference",
+              "approvedAt"
+            ],
+            "properties": {
+              "status": {
+                "const": "approved"
+              },
+              "current": {
+                "const": true
+              },
+              "reference": {
+                "type": "string",
+                "minLength": 1
+              },
+              "approvedAt": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "./catalog.schema.json",
+  "schemaVersion": "1.0",
+  "delivery": {
+    "mode": "github-release-assets",
+    "releaseTag": "current",
+    "status": "not_initialized"
+  },
+  "assets": {}
+}
